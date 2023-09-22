@@ -1,30 +1,36 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"></link>
+import React from "react";
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet"
+></link>;
 
 const LandingPage = () => {
-  const backgroundImageUrl = 'https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+  const backgroundImageUrl =
+    "https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
 
   return (
     <div
       className="container-fluid"
       style={{
         background: `url(${backgroundImageUrl}) no-repeat center center fixed`,
-        backgroundSize: 'cover',
-        height: '100vh',
-        color: 'white',
-        paddingTop: '100px',
+        backgroundSize: "cover",
+        height: "100vh",
+        color: "white",
+        paddingTop: "100px",
       }}
     >
       <header className="text-center">
         <h1 className="display-4">Find the Perfect Guide</h1>
-        <p className="lead">Explore your destination with knowledgeable local guides.</p>
+        <p className="lead">
+          Explore your destination with knowledgeable local guides.
+        </p>
       </header>
       <section className="search-section my-5">
         <div
           className="container text-white bg-dark p-4 rounded"
-          style={{ opacity: '0.8' }}
+          style={{ opacity: "0.8" }}
         >
           <h2 className="text-center mb-4">Find a Guide Near You</h2>
           <div className="row justify-content-center">
@@ -48,7 +54,7 @@ const LandingPage = () => {
       <section className="why-us-section text-center my-5">
         <div
           className="container text-white bg-dark p-4 rounded"
-          style={{ opacity: '0.8' }}
+          style={{ opacity: "0.8" }}
         >
           <h2>Why Choose Us?</h2>
           <div className="row">
@@ -79,7 +85,7 @@ const LandingPage = () => {
       <section className="cta-section text-center my-5">
         <div
           className="container text-white bg-dark p-4 rounded"
-          style={{ opacity: '0.8' }}
+          style={{ opacity: "0.8" }}
         >
           <h2>Ready to Start Your Adventure?</h2>
           <Link to="/signup" className="btn btn-primary btn-lg">
