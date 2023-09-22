@@ -37,7 +37,7 @@ export default function Navbar(props) {
               <NavLink
                 className="nav-link"
                 style={{ font: "Montserrat", fontSize: 30 }}
-                to="/Home"
+                to="/"
               >
                 HOME
               </NavLink>
