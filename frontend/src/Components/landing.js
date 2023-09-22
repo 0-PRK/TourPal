@@ -7,9 +7,19 @@ const LandingPage = () => {
   const backgroundImageUrl = 'https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
 
   return (
-    <div className="landing-page">
-      <header>
-       <Navbar />
+    <div
+      className="container-fluid"
+      style={{
+        background: `url(${backgroundImageUrl}) no-repeat center center fixed`,
+        backgroundSize: 'cover',
+        height: '100vh',
+        color: 'white',
+        paddingTop: '100px',
+      }}
+    >
+      <header className="text-center">
+        <h1 className="display-4">Find the Perfect Guide</h1>
+        <p className="lead">Explore your destination with knowledgeable local guides.</p>
       </header>
       <section className="search-section my-5">
         <div
