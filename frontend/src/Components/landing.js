@@ -12,7 +12,7 @@ const LandingPage = () => {
       style={{
         background: `url(${backgroundImageUrl}) no-repeat center center fixed`,
         backgroundSize: 'cover',
-        height: '100vh',
+        // height: '100vh',
         color: 'white',
         paddingTop: '100px',
       }}
