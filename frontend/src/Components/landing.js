@@ -76,7 +76,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className="cta-section text-center my-5">
+      <section className="cta-section text-center">
         <div
           className="container text-white bg-dark p-4 rounded"
           style={{ opacity: '0.8' }}
