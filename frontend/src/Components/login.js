@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../App.css"; // Import the CSS file
-import Footer from "./footer";
+// import Footer from "./footer";
 
 export default function Login() {
   // State to manage user input
@@ -46,7 +46,7 @@ export default function Login() {
         </form>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

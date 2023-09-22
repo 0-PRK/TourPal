@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css"; // Import the CSS file
-import Footer from "./footer";
-import Navbar from "./Navbar";
+// import Footer from "./footer";
+// import Navbar from "./Navbar";
 
 export default function About(props) {
   return (
     <div className="aligncenter1">
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="quicksand18">
         <h1 style={{ fontSize: "100px" }}>ABOUT US</h1>
         <p>
@@ -86,7 +86,7 @@ export default function About(props) {
       <h1 className="quicksand20" style={{ marginTop: "0" }}>
         <i>*We Hope You Enjoy Your Journeys with TourPal*</i>
       </h1>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

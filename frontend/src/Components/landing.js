@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "./images/Logo.png";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 
 export default function LandingPage() {
   return (
     <div className="landing-page">
       <header>
-       <Navbar />
+       {/* <Navbar /> */}
       </header>
 
       <section className="hero">

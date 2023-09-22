@@ -10,6 +10,8 @@ import ForgetPW from "./Components/forgetPW";
 import ConfirmPW from "./Components/ConfirmPW";
 import NotFound from "./Components/NotFound";
 import Protected from "./PrivateRoute";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/footer";
 
 import { Toaster } from "react-hot-toast";
 
@@ -17,7 +19,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   // const token = localStorage.getItem("accessToken");
-  
+
   // const [result, setResult] = useState(null);
   const [modal, setmodal] = useState(false);
   const [modal1, setmodal1] = useState(false);
@@ -28,8 +30,8 @@ function App() {
       <div>
         <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
         <Router>
+          <Navbar />
           <Routes>
-
             <Route
               path="/"
               element={<LandingPage modal={modal} setmodal={setmodal} />}
@@ -63,6 +65,7 @@ function App() {
 
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer/>
         </Router>
       </div>
     </>
