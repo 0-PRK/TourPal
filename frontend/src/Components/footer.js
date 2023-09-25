@@ -1,7 +1,13 @@
 import React from "react";
 import logo from "./images/Logo.png";
 
-export default function Footer(props) {
+export default function Footer({ showFooter }) {
+
+   // Check the value of showFooter
+   if (!showFooter) {
+    return null; // If showFooter is false, don't render the footer
+  }
+  
   return (
     <footer className="container1 footerbg">
       <div className="column">
